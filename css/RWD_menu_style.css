@@ -1,0 +1,197 @@
+@media screen and (min-width:1301px){
+    .nav-mobile-bar{
+        display: none;
+        opacity: 0;
+    }
+    .overlay-block {
+        display: none;
+        opacity: 0;
+    }
+    .nav-mobile{
+        display: none;
+        opacity: 0;
+    }
+}
+
+@media screen and (max-width:1301px){
+    .menu-box {
+        display: none;
+    }
+    .top_bar{
+        display: none;
+    }
+    .nav-mobile-bar{
+        position: fixed;
+        top: 0;
+        width: 100%;
+        height: 55px;
+        background-color: rgba(255, 255, 255, 0.8);
+        z-index: 99;
+        display: flex;
+        justify-content: space-between;
+    }
+    .overlay-block {
+        background-color: rgba(0,0,0,.65);
+        width: 100%;
+        height: 100%;
+        position: fixed;
+        top: 0;
+        left: 0;
+        z-index: 999;
+        display: none;
+        opacity: 1;
+    }
+    .hamburger_menu i{
+        font-size: 35px;
+        color: #1892f9;
+        margin: 10px 25px;
+    }
+    .nav-mobile{
+        width: 30%;
+        height: 100vh;
+        position: fixed;
+        top: 0;
+        right: -100%;
+        border: 1px solid #1892f9;
+        background-color: rgba(0, 0, 0, 1);
+        z-index: 9999;
+        opacity: 0;
+        transition: .5s linear;
+        display: block;
+        padding: 50px 10px 10px 10px;
+    }
+    .nav-mobile-slide{
+        right: 0%;
+        opacity: 1;
+    }
+    .RWD_menu_link_btnbox{
+        width: 100%;
+        /* border: 1px solid #fff; */
+    }
+    .RWD_menu_link_btnbox ul li{
+        width: 100%;
+        height: 60px;
+        margin: 5px 0;
+        background-color: rgb(31, 30, 30);
+    }
+    .RWD_menu_link_btnbox ul li a{
+        display: block;
+        width: 100%;
+        height: 100%;
+        text-align: center;
+        line-height: 20px;
+        padding-top: 10px;
+    }
+    .RWD_menu_link_btnbox ul li a p{
+        font-size: 18px;
+        color: #fff;
+    }
+    .RWD_menu_link_btnbox ul li a span{
+        display: block;
+        font-size: 16px;
+        color: #1892f9;
+    }
+    .RWD_menu_divider{
+        width: 100%;
+        height: 1px;
+        background-color: rgb(93, 100, 102);
+        margin: 20px 0;
+    }
+    .nav-mobile .RWD_move_menu li{
+        background-color:transparent;
+        height: 45px;
+    }
+
+    .nav-mobile .RWD_move_menu li a p{
+        font-size: 20px;
+        color: #fff;
+        font-weight: 500;
+    }
+    .nav-mobile .RWD_move_menu li a{
+        padding-top: 13px;
+    }
+    .RWD_move-topbtn{
+        display: block;
+        text-align: center;
+        font-size: 20px;
+        color: #fff;
+    }
+    .navbar-close-btn{
+        color: #fff;
+        position: absolute;
+        top: 10px;
+        right: 10px;
+        font-size: 30px;
+    }
+}
+
+@media screen and (max-width:1024px){
+    .nav-mobile{
+        width: 40%;
+    }
+}
+@media screen and (max-width:769px){
+    .RWD_menu_link_btnbox ul li {
+        height: 55px;
+        margin: 5px 0;
+    }
+    .nav-mobile .RWD_move_menu li {
+        height: 40px;
+    }
+    .nav-mobile{
+        width: 50%;
+    }
+}
+@media screen and (max-width:541px){
+    .nav-mobile{
+        width: 80%;
+    }
+    .nav-mobile .RWD_move_menu li a p {
+        font-size: 18px;
+        font-weight: 400;
+    }
+}
+@media screen and (max-width:375px){
+    .nav-mobile {
+        padding: 40px 5px 5px 5px;
+    }
+    .RWD_menu_link_btnbox ul li a p {
+        font-size: 16px;
+    }
+    .RWD_menu_link_btnbox ul li a span {
+        font-size: 14px;
+    }
+    .nav-mobile .RWD_move_menu li {
+        height: 35px;
+    }
+    .nav-mobile .RWD_move_menu li a {
+        padding-top: 7px;
+    }
+    .RWD_menu_divider {
+        margin: 5px 0;
+    }
+}
+@media screen and (max-width:320px){
+    .nav-mobile{
+        width: 90%;
+    }
+    .hamburger_menu i {
+        font-size: 25px;
+    }
+    .navbar-close-btn {
+        font-size: 25px;
+    }
+    .RWD_menu_link_btnbox ul li {
+        height: 40px;
+    }
+    .RWD_menu_link_btnbox ul li a {
+        padding-top: 0px;
+    }
+    .nav-mobile .RWD_move_menu li a p {
+        font-size: 16px;
+    }
+    .RWD_move-topbtn {
+        margin-top: 10px;
+        font-size: 16px;
+    }
+}

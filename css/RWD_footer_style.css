@@ -1,0 +1,67 @@
+/*for 手機裝置(螢幕尺寸<768px)*/
+@media screen and (max-width:767px){
+	.footer{
+		width: 100%;
+		height: auto;
+		min-width: unset;
+	}
+	.footer .footerwrap{
+		width: 100%;
+		height: auto;
+		justify-content: flex-start;
+    	align-items: center;
+    	flex-direction: column;
+	}
+	.logo-container{
+		position: relative;
+		width: max-content;
+		justify-content: flex-start;
+    	align-items: center;
+    	flex-direction: column;
+	}
+	.logo-container a{
+		margin: 0 auto 15px;
+	}
+	.dgcopy-container {
+	    position: relative;
+	    width: max-content;
+	    margin: 10px auto;
+	    text-align: center;
+	}
+	.grade {
+	    width: max-content;
+	    display: flex;
+	    display: -webkit-box;
+	    display: -webkit-flex;
+	    display: -ms-flexbox;
+	    display: -moz-box;
+	    flex-wrap: wrap;
+	    justify-content: flex-start;
+	    align-items: flex-start;
+	    margin: 10px auto;
+	}
+}
+
+/*for 平板裝置(768px<螢幕尺寸<1024px)*/
+@media screen and (min-width:768px) and (max-width:1024px){
+	.footer{
+		width: 100%;
+		height: auto;
+		min-width: unset;
+	}
+	.footer .footerwrap{
+		width: 100%;
+		height: auto;
+		justify-content: center;
+    	align-items: center;
+	}
+	.logo-container{
+		width: 100%;
+		justify-content: center;
+    	align-items: center;
+    	margin: 15px 0;
+	}
+	.dgcopy-container,.grade{
+		margin: 10px;
+	}
+}
